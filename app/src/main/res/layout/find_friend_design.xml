@@ -13,14 +13,16 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     >
+
     <ImageView
         android:id="@+id/image_notification"
-        android:layout_width="200dp"
-        android:layout_height="200dp"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="30dp"
         android:scaleType="centerCrop"
-        android:src="@drawable/profile_image"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="15dp"/>
+        android:src="@drawable/profile_image" />
 
     <TextView
         android:id="@+id/name_notification"
@@ -30,8 +32,9 @@
         android:text="user name"
         android:textAlignment="center"
         android:textSize="20dp"
+        android:layout_marginTop="8dp"
         android:textStyle="bold"
-        android:layout_below="@id/image_notification"
+        android:layout_toRightOf="@id/image_notification"
         />
 
 
@@ -40,9 +43,10 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@id/name_notification"
+            android:layout_toRightOf="@+id/image_notification"
             android:layout_marginTop="8dp"
-            android:layout_marginLeft="80dp"
-            android:layout_marginRight="80dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="8dp"
             android:padding="5dp"
             android:background="@color/colorPrimary"
             android:textColor="@android:color/white"
@@ -58,9 +62,10 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/request_accept_btn"
         android:layout_marginTop="8dp"
-        android:layout_marginLeft="80dp"
-        android:layout_marginRight="80dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="8dp"
         android:layout_marginBottom="12dp"
+        android:layout_toRightOf="@+id/image_notification"
         android:padding="5dp"
         android:background="@android:color/holo_blue_light"
         android:textColor="@android:color/white"
