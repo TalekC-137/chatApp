@@ -41,6 +41,8 @@ usersRef = FirebaseDatabase.getInstance().getReference().child("Users");
         findFriendList.setLayoutManager(new LinearLayoutManager(getApplicationContext()));
 
 
+
+
         searchET.addTextChangedListener(new TextWatcher() {
             @Override
             public void beforeTextChanged(CharSequence s, int start, int count, int after) {
@@ -86,7 +88,7 @@ usersRef = FirebaseDatabase.getInstance().getReference().child("Users");
                             contacts.class).build();
 
         }
-
+//depression
         FirebaseRecyclerAdapter<contacts, FindFriendsViewHolders> firebaseRecyclerAdapter =
                 new FirebaseRecyclerAdapter<contacts, FindFriendsViewHolders>(options) {
                     @Override
